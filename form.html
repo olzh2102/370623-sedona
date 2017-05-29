@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <nav class="main-nav">
+          <span class="main-nav__toggle"></span>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--hidden main-nav__item--index"><a>Главная</a></li>
+            <li class="main-nav__item main-nav__item--hidden main-nav__item--photo"><a href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item main-nav__item--logo"><a href="index.html"><img src="#" alt="logo"></a></li>
+            <li class="main-nav__item main-nav__item--hidden main-nav__item--form"><a href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item main-nav__item--hidden main-nav__item--htmlacad"><a href="http://htmlacademy.ru">Html academy</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+
+        <div class="welcome welcome-smaller">
+          <img src="http://placehold.it/150x100" alt="SEDONA">
+          <h1>sedona</h1>
+        </div>
+        <div class="container-inner container-inner__form">
+          <div class="page-intro page-intro__form">
+            <h1>оставьте свой отзыв</h1>
+            <p>помогите нашим отелям стать лучше! оставьте отзыв о них,
+              а также о посещенных вами достопримечательностях</p>
+          </div>
+          <form action="#" class="review-form" method="post">
+
+            <div class="review-form-field">
+              <h2 class="review-form-field_title">представтесь</h2>
+              <div class="fullname">
+                <div class="input fullname__item">
+                  <label for="name">Имя:</label>
+                  <input type="text" name="name" id="name" required autofocus>
+                </div>
+                <div class="input fullname__item">
+                  <label for="surname">Фамилия:</label>
+                  <input type="text" name="surname" id="surname" required>
+                </div>
+                <div class="input fullname__item">
+                  <label for="middlename">Отчество:</label>
+                  <input type="text" name="middlename" id="middlename" required>
+                </div>
+              </div>
+            </div>
+            <div class="review-form-contact">
+              <h2 class="review-form-field_title">контактная информация</h2>
+              <div class="contacts">
+                <div class="contacts-phonenumber">
+                  <label for="phonenumber">Контактный телефон:</label>
+                  <input type="number" name="phonenumber" id="phonenumber" placeholder="Введите телефон">
+                </div>
+                <div class="contacts-email">
+                  <label for="email">Электронная почта:</label>
+                  <input type="text" name="email" id="email" placeholder="Введите e-mail">
+                </div>
+              </div>
+            </div>
+            <div class="review-form-impression">
+              <div class="radiobtn">
+                <label for="impression-positive">Скорее положительное</label>
+                <input type="radio" name="impression-positive" id="impression-positive" checked>
+              </div>
+              <div class="radiobtn">
+                <label for="impression-negative">Скорее отрицательное</label>
+                <input type="radio" name="impression-negative" id="impression-negative">
+              </div>
+              <div class="radiobtn">
+                <label for="impression-hardtoanswer">Затрудняюсь ответить</label>
+                <input type="radio" name="impression-hardtoanswer" id="impression-hardtoanswer">
+              </div>
+            </div>
+            <div class="review-form-sightseeing">
+              <h2 class="review-form-field_title">посещенные достопримечательности:</h2>
+              <div class="sightseeing">
+                <div class="sightseeing__item checkbox">
+                  <label for="sightseeing1">Мост дьявола</label>
+                  <input type="checkbox" name="sightseeing1" id="sightseeing1" checked>
+                </div>
+                <div class="sightseeing__item checkbox">
+                  <label for="sightseeing2">Слай-парк</label>
+                  <input type="checkbox" name="sightseeing2" id="sightseeing2" checked>
+                </div>
+                <div class="sightseeing__item checkbox">
+                  <label for="sightseeing3">Гора-колокол</label>
+                  <input type="checkbox" name="sightseeing3" id="sightseeing3">
+                </div>
+                <div class="sightseeing__item checkbox">
+                  <label for="sightseeing4">Красные скалы</label>
+                  <input type="checkbox" name="sightseeing4" id="sightseeing4" checked>
+                </div>
+              </div>
+            </div>
+            <div class="review-form-emotions">
+              <h2 class="review-form-field_title">опишите свои эмоций:</h2>
+              <textarea name="comment" id="comment-field" rows="10">
+                Опишите подробно все свои восторги
+              </textarea>
+              <div class="review-form_submit">
+                <input type="submit" class="btn btn-blue" value="Отправить отзыв">
+              </div>
+            </div>
+
+          </form>
+        </main>
+        <footer class="page-footer">
+          <div class="page-footer__hashtag">
+            <a class="hashtag" href="#">#visitsedona</a>
+          </div>
+          <div class="page-footer__social">
+            <ul class="social-links">
+              <li class="social-links__item"><a class="btn btn-blue">twitter<a/></li>
+              <li class="social-links__item"><a class="btn btn-blue">facebook<a/></li>
+              <li class="social-links__item"><a class="btn btn-blue">youtube<a/></li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <a class="copyright" href="http;//htmlacademy.ru">Разработана</a>
+          </div>
+        </footer>
+       </div>
