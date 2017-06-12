@@ -1,0 +1,26 @@
+.advantages {
+  font-size: $font-size;
+  text-transform: $text-transform;
+  text-align: left;
+  line-height: $line-height;
+  background-color: $grey--light;
+
+  &__item {
+    padding: 33px 41px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $grey--dark;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: $font-size--h2;
+  }
+
+  &__number {
+    &:before, &:after {
+      content: " - ";
+    }
+  }
+}
