@@ -1,0 +1,23 @@
+.popup {
+  @include clearfix;
+  margin: 0 auto;
+  outline: 1px solid purple;
+}
+
+.popup__content {
+  text-align: center;
+}
+
+.popup--success {
+  @media (min-width: $bp-tablet) {
+    width: 640px;
+    height: 347px;
+  }
+}
+
+.popup--failure {
+  @media (min-width: $bp-tablet) {
+    width: 400px;
+    height: 347px;
+  }
+}

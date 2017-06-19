@@ -1,22 +1,14 @@
+$font: "PT Sans", "Arial", sans-serif;
+$font-bold: "PT Sans Bold", "Tahoma", sans-serif;
+
+$font-color-white: #fff;
+$font-color-dark: #222;
+$font-color-blue: #9ac2db;
 $blue: #81b3d2;
-$grey--light: #eee;
-$grey--dark: #d6d6d6;
+$blue-hvr: #669ec0;
+$blue-down: #5496bd;
+$white: #fff;
 
-$text-color: #333;
-$text-color--light: #fff;
-
-$font-family: "PT Sans", Arial, sans-serif;
-
-$font-size: 1.4rem;
-$line-height: 1.5;
-
-$font-size--h1: 2.1rem;
-$font-size--h2: 1.8rem;
-$font-size--h3: 1.6rem;
-
-$headings-weight: bold;
-$headings-line-height: 26/18;
-
-$text-transform: uppercase;
-$facilities-icon-size: 40px;
-$facilities: (accomodation, food, souvenirs);
+$bp-mobile: 320px;
+$bp-tablet: 768px;
+$bp-desktop: 1200px;

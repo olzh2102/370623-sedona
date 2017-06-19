@@ -1,0 +1,48 @@
+.page-footer {
+  @include clearfix;
+
+  outline: 1px solid black;
+
+  @media (min-width: $bp-tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.page-footer__hashtag,
+.page-footer__social,
+.page-footer__copyright {
+  margin: 0 auto;
+  padding-top: 40px
+}
+
+.page-footer__hashtag {
+  width: 100px;
+
+  @media (min-width: $bp-tablet) {
+    float: left;
+  }
+
+  @media (min-width: $bp-desktop) {
+    text-align: center;
+  }
+}
+
+.page-footer__copyright {
+  width: 130px;
+  margin-bottom: 23px;
+
+  @media (min-width: $bp-tablet) {
+    float: right;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-right: 44px;
+    text-align: right;
+  }
+}

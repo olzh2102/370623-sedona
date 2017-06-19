@@ -1,48 +1,21 @@
-@mixin list-init {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@mixin clearfix {
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
-@mixin colors($bg: #fff, $text: $text-color) {
-  color: $text;
-  background-color: $bg;
-}
+@media container {
+  width: 320px;
+  margin: 0 auto;
 
-@mixin size($width: 0, $height: 0) {
-  width: $width;
-  height: $height;
-}
+  @media (min-width: $bp-tablet) {
+    width: 768px;
+  }
 
-@mixin transition($what: all, $duration: 0.3s, $timing: ease-out) {
-  transition: $what $duration $timing;
-}
-
-@mixin translateXY($x, $y) {
-  -webkit-transform: translate($x,$y);
-  -ms-transfrom: translate($x,$y);
-  transform: translate($x,$y);
-
-}
-
-@mixin translateX ($x) {
-  -webkit-transform: translateX($x);
-      -ms-transform: translateX($x);
-          transform: translateX($x);
-}
-
-@mixin translateY ($y) {
-  -webkit-transform: translateY($y);
-      -ms-transform: translateY($y);
-          transform: translateY($y);
-}
-
-@mixin centerV {
-  top: 50%;
-  @include translateY(-50%);
-}
-
-@mixin centerH {
-  left: 50%;
-  @include translateX(-50%);
+  @media (min-width: $bp-desktop) {
+    width: 1200px; 
+  }
 }

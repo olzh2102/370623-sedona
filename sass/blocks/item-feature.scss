@@ -1,0 +1,14 @@
+.item-feature {
+  outline: 1px solid green;
+
+  @media (min-width: $bp-tablet) {
+    float: left;
+    width: 256px;
+    height: 256px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 400px;
+    height: 330px;
+  }
+}

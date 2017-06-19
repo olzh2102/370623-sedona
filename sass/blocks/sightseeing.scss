@@ -1,0 +1,43 @@
+.sightseeing {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  outline: 1px solid red;
+
+  @media (min-width: $bp-tablet) {
+    order: 5;
+  }
+}
+
+.sightseeing__heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.sightseeing__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $bp-tablet) {
+    padding-left: 95px;
+  }
+
+  @media (min-width: $bp-tablet) {
+    justify-content: space-between;
+    padding-left: 0;
+  }
+}
+
+.sightseeing__item {
+  width: 100%;
+
+  @media (min-width: $bp-tablet) {
+    width: 260px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: auto;
+  }
+}

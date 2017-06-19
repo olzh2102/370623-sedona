@@ -1,0 +1,28 @@
+.page-header__logo-wrapper {
+}
+
+.page-header__logo-wrapper {
+  height: 56px;
+
+  @media (min-width: $bp-tablet) {
+    height: 0px;
+  }
+}
+
+.page-header__logo {
+  margin: 0 auto;
+  width: 102px;
+
+  @media (min-width: $bp-tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.page-header__logo img {
+  width: 102px;
+  height: 83px;
+}

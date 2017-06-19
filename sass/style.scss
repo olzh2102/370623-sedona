@@ -1,14 +1,46 @@
-@import "normalize";
-@import "variables";
-@import "mixins";
-@import "advantages";
-@import "btn";
-@import "facilities";
-@import "feature";
-@import "hashtag";
-@import "main-nav";
-@import "map";
-@import "page-footer";
-@import "page-intro";
-@import "search-hotel";
-@import "social-links";
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+@import "blocks/page-footer.scss";
+@import "blocks/social-links.scss";
+@import "blocks/btn.scss";
+@import "blocks/popup.scss";
+
+@import "blocks/reason.scss";
+@import "blocks/item-reason.scss";
+@import "blocks/features.scss";
+@import "blocks/item-feature.scss";
+@import "blocks/search-hotel.scss";
+@import "blocks/map.scss";
+
+@import "blocks/photo-gallery.scss";
+@import "blocks/item-photo.scss";
+@import "blocks/video-gallery.scss";
+@import "blocks/video.scss";
+
+@import "blocks/review-form.scss";
+@import "blocks/fullname.scss";
+@import "blocks/contacts.scss";
+@import "blocks/impression.scss";
+@import "blocks/sightseeing.scss";
+@import "blocks/emotions.scss";
+
+
+body {
+  @include container;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border: none;
+}

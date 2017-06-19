@@ -1,0 +1,10 @@
+.search-hotel {
+  @include clearfix;
+  height: 288px;
+
+  @media (min-width: $bp-tablet) {
+    height: 320px;
+  }
+
+  outline: 1px solid black;
+}
